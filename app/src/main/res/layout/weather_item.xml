@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="91dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="date"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="175dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/date"
+        android:gravity="center"
+        android:text="city"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="72dp"
+        android:layout_height="41dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="0dp"
+        android:gravity="center"
+        android:text="temp"
+        android:textSize="15sp" />
+
+
+
+</RelativeLayout>

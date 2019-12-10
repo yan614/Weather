@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colort"
+    >
+
+    <!-- 日期-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dateWenzi"
+            android:layout_width="175dp"
+            android:layout_height="32dp"
+            android:textColor="#fff"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:text="今日：" />
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+    <!--时间-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <TextView
+            android:id="@+id/timeWenzi"
+            android:layout_width="175dp"
+            android:layout_height="32dp"
+            android:textColor="#fff"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:text="上次更新时间：" />
+
+        <TextView
+            android:id="@+id/updateTimeText"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+    <!--地区-->
+    <TextView
+        android:id="@+id/cityText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:text="TextView" />
+    <!--温度-->
+    <TextView
+        android:id="@+id/temperatureText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="40dp" />
+    <!--空气质量-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="空气质量"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+    <!--两个布局显示-->
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="97dp"
+        android:layout_margin="15dp">
+
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/humidityText"
+                    android:layout_width="175dp"
+                    android:layout_height="59dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="40dp" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="空气湿度"
+                    android:textColor="#fff" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/PM25Text"
+                    android:layout_width="180dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="40dp" />
+
+                <TextView
+
+                    android:layout_width="206dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="PM2.5指数"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <!--生活建议-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="生活建议"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+    <!--感冒信息-->
+    <TextView
+        android:id="@+id/ganmaoText"
+        android:layout_width="331dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+    <!-- 两个按钮-->
+    <LinearLayout
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/return_button"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="返回" />
+
+        <Button
+            android:id="@+id/refresh_button"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="刷新" />
+
+    </LinearLayout>
+    <!-- 两个按钮-->
+    <Button
+        android:id="@+id/guanzhu"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:text="添加到我的关注" />
+
+</LinearLayout>
